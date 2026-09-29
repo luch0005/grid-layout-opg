@@ -1,53 +1,532 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="system.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="system.css" />
     <title>Blank Struktur</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header -->
     <header class="">
-        <div class="container flex flex-row justify-between items-center p-md">
-            <div class="logo"><a href="/" class="text-decoration-none text-xl">Struktur</a></div>
-            <nav class="hidden visible-md">
-                <a href="#" class="p-r-sm">Navigation 1</a>
-                <a href="#" class="p-r-sm">Navigation 2</a>
-                <a href="#">Navigation 3</a>
-            </nav>
-            <div class="navicon hidden-md">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" height="32" width="32">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-            </div>
-            <nav class="mobile-menu hidden flex-col justify-center items-center hidden-md">
-                <a href="#" class="p-r-sm">Navigation 1</a>
-                <a href="#" class="p-r-sm">Navigation 2</a>
-                <a href="#">Navigation 3</a>
-            </nav>
+      <div class="container flex flex-row justify-between items-center p-md">
+        <div class="logo">
+          <a href="/" class="text-decoration-none text-l"
+            >Københavnerbilleder</a
+          >
         </div>
+        <nav class="hidden visible-md">
+          <a href="#bogen" class="p-r-sm">Bogen</a>
+          <a href="#forfatteren" class="p-r-sm">Forfatteren</a>
+          <a href="#koeb-bogen" class="btn-sm btn-secondary">Køb bogen</a>
+        </nav>
+        <div class="navicon hidden-md">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+            height="32"
+            width="32"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
+        <nav
+          class="mobile-menu hidden flex-col justify-center items-center hidden-md"
+        >
+          <a href="#bogen" class="p-r-sm">Bogen</a>
+          <a href="#forfatteren" class="p-r-sm">Forfatteren</a>
+          <a href="#koeb-bogen" class="btn-sm btn-secondary">Køb bogen</a>
+        </nav>
+      </div>
     </header>
     <!-- Header slut -->
 
     <!-- Main -->
     <main>
-        <div class="container grid">
-            <div class="col-12 ">
-                <p>Alt godt kommer til den der venter: Tilføj dit indhold her...</p>
-            </div>
+      <div class="container">
+        <div class="grid border-lg gradient">
+          <div class="col-12 col-md-6">
+            <img src="/filer/kobenhavnerbilleder-sten-simons.jpg" alt="" />
+          </div>
+          <div class="col-12 col-md-6 content-center">
+            <p>
+              Københavnerbilleder - en guide til hipster foto af Sten Simons
+            </p>
+            <p>Køb den før din nabo!</p>
+            <p><a href="#købnu" class="btn-primary btn-lg">Køb nu!</a></p>
+          </div>
         </div>
+      </div>
+      <div id="bogen" class="container">
+        <div class="grid">
+          <div class="col-6 col-start-4 col-md-4 col-md-start-3">
+            <h2>Kort om bogen</h2>
+            <p>
+              Københavnerbilleder er de danske streetfotografers bibel: Det er
+              en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle
+              væsentlige aspekter af streetfotografering fra grundlæggende
+              teknik til kreative eksperimenter. Alt sammen krydret med masser
+              af inspirerende fotos. God læselyst!
+            </p>
+          </div>
+          <div class="col-6 col-start-4 col-md-4 col-md-start-7">
+            <h2>Stamdata for bogen</h2>
+            <ul>
+              <li>Titel: Københavnerbilleder - en guide til hipster foto</li>
+              <li>Forfatter: Sten Simons</li>
+              <li>Antal sider: 344</li>
+              <li>Forlag: Mellem Linjerne</li>
+              <li>ISBN: 987-6-987654-32-1</li>
+              <li>Pris: 399.-</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="grid">
+          <div class="col-12 col-md-4 col-lg-4">
+            <img
+              src="/filer/kobenhavnerbilleder_oppefra.jpg"
+              alt="Billede af åben bog oppefra"
+            />
+          </div>
+          <div class="col-12 col-md-4 col-lg-4">
+            <img
+              src="/filer/kobenhavnerbilleder_aaben_venstre.jpg"
+              alt="Billede af åben bog oppefra"
+            />
+          </div>
+          <div class="col-12 col-md-4 col-lg-4">
+            <img
+              src="/filer/kobenhavnerbilleder_oppefra.jpg"
+              alt="Billede af åben bog oppefra"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="grid">
+          <div class="col-12">
+            <h1>Anmeldelser</h1>
+          </div>
+          <div class="col-12 col-md-4">
+            <h3>5 ud af 6 stjerner</h3>
+            <p>
+              Københavnerbilleder er en grundig introduktion til at skyde
+              billeder med retro-kant. Hvad enten du er har arbejdet med foto
+              siden 135-filmen kom på markedet, du kun har skudt digitalt eller
+              er helt nybegynder, er der masser af tips og tricks i bogen.
+            </p>
+            <p class="text-light">- Hanne Hovgaard, Berlingeren</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <h3>4 af 5 stjerner</h3>
+            <p>
+              Teksten er underholdende, og billederne er sku’ flotte. Hvad mere
+              skal man sige om en fotobog?
+            </p>
+            <p class="text-light">- Kim Kloggaard, Fotojournalen.dk</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <h3>6 af 6 stjerner</h3>
+            <p>
+              Sten Simons kan det der - og han bliver bedre og bedre. Stens
+              tredje fotobog er klart den bedste - her er han for alvor i sit
+              rette element, meget bedre end “studiefotografering som
+              begyndere.” Tillykke - godt arbejde.
+            </p>
+            <p class="text-light">- Volmer Hansen, Lukkertiden.dk</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="grid">
+          <div class="col-12">
+            <h1>Bogens kapitler</h1>
+          </div>
+          <div class="col-12 col-md-6">
+            <div>
+              <h2>Kapitel 1 - Intro til street foto</h2>
+
+              <p>
+                Hvad er street foto? Det handler i bund og grund om at skyde
+                byens liv og byens geometri (urban geometry). I dette kapitel
+                får du en grundig intro til hvad street foto er og et overblik
+                over nogen af de kendte street-fotografer. Alt krydret med en
+                masse gode eksempler på street fotos.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div>
+              <h2>Kapitel 2 - Om at skyde street</h2>
+
+              <p>
+                Vil du skyde street? Så er der ikke nogen vej udenom: Du skal ud
+                på gaderne og prøve det! I dette kapitel får du en teknisk
+                indføring i hvordan du bedst skyder street. Uanset om du er
+                begynder eller professionel, er der mange gode tekniske tips og
+                tricks til street-skyderiet.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div>
+              <h2>Kapitel 3 - Om at finde det rette motiv</h2>
+
+              <p>
+                Indimellem er man heldig, andre gange kommer man hjem helt uden
+                gode motiver. Med et par tips og tricks til at finde de rette
+                motiver, stiger chancen gevaldigt for at fange de gode motiver.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div>
+              <h2>Kapitel 4 - Digital street foto</h2>
+
+              <p>
+                De fleste af os skyder oftest digitalt fordi det er billigere og
+                nemmere. Og nogen teknikker og fremgangsmåder egner sig kun til
+                digital street foto. I dette kapitel får du en række tips og
+                tricks til digital street-foto.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div>
+              <h2>Kapitel 5 - Analog street foto</h2>
+
+              <p>
+                Analog er sejt fordi det er mere “ægte,” dyrere og mere
+                besværligt end digital. Det signalerer entusiasme. Nogle
+                teknikker og fremgangsmåder egner sig bedst til analog street
+                foto. I dette kapitel får du en række tips og tricks til analog
+                street-foto.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div>
+              <h2>Kapitel 6 - Om at skyde sort/hvid</h2>
+
+              <p>
+                Alle street-fotografer skyder sort/hvid nu og da. Nogen altid.
+                Hvorfor? Hvad er der specielt ved sort/hvid fotografering, og
+                hvad adskiller sort/hvid fra farvefotografering? Her får du en
+                række tips og tricks til sort/hvid fotografering.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="forfatteren" class="container">
+        <div class="grid">
+          <div class="col-6 col-start-4 col-md-4 col-md-start-3">
+            <img src="/filer/sten_simons.jpg" alt="Billede af Sten Simons" />
+          </div>
+          <div class="col-6 col-start-4 col-md-4 col-md-start-7">
+            <h1>Forfatteren</h1>
+            <p>
+              Sten Simons har en lang foto-karriere bag sig. Det hele startede i
+              00’erne, da han gik rundt i Pisserenden for at fotografere
+              ungdommens forfald. Det ledte til en række udstillinger, og blev
+              senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra
+              nattelivet.”
+            </p>
+            <p>
+              Derefter tog karrieren fart: Han blev fotojournalist og
+              dokumenterede en masse dagligdagsstof fra Amager på dagbladet
+              “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og
+              har skrevet et utal af bøger, herunder bestsellerne Scener fra
+              S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering
+              for evnesvage.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="grid">
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/_6090016.jpeg"
+              alt=""
+            />
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/0008.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/agfa-genanvendeligt-kamera-35mm-11.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/agfa-genanvendeligt-kamera-35mm-5.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/_6090022.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/agfa-genanvendeligt-kamera-35mm-8.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/agfa-genanvendeligt-kamera-35mm-film-2-5.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/agfa-genanvendeligt-kamera-35mm-film-2-7.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/amarminoen-med-et-agfa-le-box-11.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/amarminoen-med-et-agfa-le-box-12.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/amarminoen-med-et-agfa-le-box-3.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/anamorfiske-landskaber-amager-faelled-4.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/foraar-med-et-agfa-le-box-2021-17.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/foraar-med-et-agfa-lebox-2-20.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/kbh-by-night-3.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/lomo-smena-15.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/lomo-smena-17.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/lomo-smena-20.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/nikkormat-ft2-orestad-c-6.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/nikkormat-ft2-remiseparken-2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/nikkormat-ft2-remiseparken-7.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/orestad-til-islands-brygge-pentax-auto-110-12.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/orestad-til-islands-brygge-pentax-auto-110-14.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/orestad-til-islands-brygge-pentax-auto-110-16.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/orestad-til-islands-brygge-pentax-auto-110-17.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/orestad-til-islands-brygge-pentax-auto-110-19.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/orestad-til-islands-brygge-pentax-auto-110-24.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/orestad-til-islands-brygge-pentax-auto-110-8.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/orestad-til-islands-brygge-pentax-auto-110.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/pinhole-objektiver-ved-eghjorten-3.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/tyk-taage-i-orestad.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/vinter-2021-med-lomo-smena-17.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-6 col-lg-3">
+            <img
+              src="/filer/drive-download-20260926T112346Z-1-001/vinter-2021-med-lomo-smena-6.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="koeb-bogen" class="container">
+        <div class="grid">
+          <div class="col-12 col-md-6">
+            <img src="/filer/kobenhavnerbilleder-sten-simons.jpg" alt="" />
+          </div>
+          <div class="col-12 col-md-6 content-center">
+            <h2>Køb bogen!</h2>
+            <p>Bogen er til salg i alle de store boghandler.</p>
+            <p>
+              Lige nu kan du få 10% online rabat ved at købe den i William Dams
+              boghandel. Brug rabatkoden
+            </p>
+            <p class="text-light">koebenhavnerbilleder</p>
+            <p>
+              <a href="#købnu" class="btn-secondary btn-sm"
+                >Køb hos William Dam</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="grid">
+          <fieldset class="col-4">
+            <legend>Tilmeld dig nyhedsbrevet</legend>
+            <div>
+              <label for="first_name">Fornavn</label>
+              <input required type="text" id="first_name" />
+
+              <label for="last_name">Efternavn</label>
+              <input required type="text" id="last_name" />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input required type="email" id="mail" />
+            </div>
+            <div class="form-group">
+              <label for="tlf">Telefonnummer</label>
+              <input required type="tel" id="tlf" />
+            </div>
+
+            <div>
+              <input type="checkbox" id="accept_terms" />
+              <label for="accept_terms"
+                >Accepter venligst vores terms & conditions</label
+              >
+            </div>
+
+            <button type="submit" class="btn-secondary btn-sm">
+              Tilmeld dig nyhedsbrevet!
+            </button>
+          </fieldset>
+        </div>
+      </div>
     </main>
     <!-- Main slut -->
 
     <!-- Footer -->
     <footer class="container-full bg-dark text-bright">
-        <div class="container text-center p-md">
-            <p>Lavet med ❤️ af Stefan</p>
-        </div>
+      <div class="container text-center p-md">
+        <p>copyright © 2025 - Mellem linjerne</p>
+      </div>
     </footer>
 
     <!-- Inkluderer scripts-->
     <script src="js.js"></script>
-</body>
+  </body>
 </html>
